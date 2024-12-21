@@ -15,10 +15,6 @@ let input = document.querySelector('input')
 
 let city = prompt("enter city name")
 
-// let handleChange = (e) => {
-//   console.log(input.value)
-// }
-// input.addEventListener('change', handleChange())
 
 let fetching = async () => {
   let resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=12a8706d052c4b8d12686a30a9542686`)
